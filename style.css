@@ -219,7 +219,7 @@ main {
 .section-title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: #fff;
     font-weight: 700;
     position: relative;
@@ -272,7 +272,7 @@ main {
     border-radius: 12px;
     border: 1px solid rgba(129, 42, 210, 0.3);
     transition: all 0.3s ease;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .education-card:hover {
@@ -328,7 +328,7 @@ main {
     border-radius: 12px;
     border: 1px solid rgba(129, 42, 210, 0.2);
     transition: all 0.3s ease;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .skill-category:hover {
@@ -385,7 +385,7 @@ main {
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid rgba(129, 42, 210, 0.3);
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .project-card:hover {
@@ -402,10 +402,22 @@ main {
     align-items: center;
     justify-content: center;
     color: rgba(255, 255, 255, 0.8);
+    /* color: red; */
     font-weight: 600;
     font-size: 1.1rem;
 }
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
 
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 .project-card h3 {
     font-size: 1.4rem;
     color: #fff;
@@ -444,8 +456,15 @@ main {
     max-width: 1400px;
     margin: 3rem auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .contact-content p {
     font-size: 1.2rem;
     color: #d0d0ff;
@@ -477,6 +496,57 @@ main {
     color: #8129d2;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(129, 42, 210, 0.3);
+}
+
+form{
+    /* background: red; */
+    width: 600px;
+    font-size: 1.2rem;
+    box-shadow: 0 8px 20px rgba(129, 42, 210, 0.3);
+    transition: all .3s ease;
+     background-color: #8129d2;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+
+
+}
+
+form:hover{
+     transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(129, 42, 210, 0.3);
+}
+
+.form-inputs{
+    padding: 1.5rem;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form-input input, textarea{
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+
+}
+.contact-btn{
+    width: 40%;
+    background-color: #fff;
+    margin: 1rem;
+    color: #8129d2;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(129, 42, 210, 0.3);
+    transition: .3s ease;
+}
+
+.contact-btn:hover{
+    background: #8129d2;
+    color: #fff;
 }
 
 /* -------------- FOOTER ---------------- */
