@@ -1,8 +1,10 @@
 import express from "express";
 import dotoenv from "dotenv";
+import cors from "cors";
 import formRouter from "./routes/form.route.js";
 import connectDb from "./connectDb.js";
-import cors from "cors";
+import loginRouter from "./routes/admin.route.js";
+import Admin from "./admin.model.js";
 const app = express();
 dotoenv.config();
 app.use(express.json());
@@ -15,6 +17,10 @@ app.get("/", (req, res) => {
 
 
 app.use("/api", formRouter);
+app.use("/api", loginRouter);
+
+// app.use("api/",);
+
 
 
 
