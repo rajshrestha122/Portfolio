@@ -45,7 +45,7 @@ if (typedText) {
 let contactBtn = document.getElementById("contact-btn");
 let form = document.querySelector("form");
 // const backendUri = "http://localhost:3000/api/form";
-const backendUri = "portfolio-1mj7wxl9f-rajshrestha122s-projects.vercel.app";
+const backendUri = "http://portfolio-1mj7wxl9f-rajshrestha122s-projects.vercel.app";
 
 // let formName = document.getElementById("name");
 // let formEmail = document.getElementById("email");
