@@ -57,6 +57,7 @@ contactBtn.addEventListener("click", async(e)=> {
   e.preventDefault();
   contactBtn.disabled = true;
   contactBtn.textContent = "Loading...."
+  
 
   console.log("success");
 
@@ -89,6 +90,7 @@ contactBtn.addEventListener("click", async(e)=> {
     alert("Form submitted");
     contactBtn.disabled = false
     contactBtn.textContent = "Message me!"
+    
 
     
   }catch(error){
