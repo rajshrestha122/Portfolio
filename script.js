@@ -46,7 +46,7 @@ let contactBtn = document.getElementById("contact-btn");
 let form = document.querySelector("form");
 // const backendUri = "http://localhost:3000/api/form";
 // const backendUri = "http://portfolio-1mj7wxl9f-rajshrestha122s-projects.vercel.app";
-const backendUri = "https://portfolio-theta-one-38.vercel.app/";
+const backendUri = "https://portfolio-theta-one-38.vercel.app/api/form";
 
 // let formName = document.getElementById("name");
 // let formEmail = document.getElementById("email");
